@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43C72A1B1B98E8E100740AFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C72A1A1B98E8E100740AFE /* AppDelegate.swift */; };
+		43C72A1D1B98E8E100740AFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C72A1C1B98E8E100740AFE /* ViewController.swift */; };
+		43C72A201B98E8E100740AFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C72A1E1B98E8E100740AFE /* Main.storyboard */; };
+		43C72A221B98E8E100740AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43C72A211B98E8E100740AFE /* Assets.xcassets */; };
+		43C72A251B98E8E100740AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C72A231B98E8E100740AFE /* LaunchScreen.storyboard */; };
+		43C72A3B1B98EA5900740AFE /* ImageResizingMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C72A3A1B98EA5900740AFE /* ImageResizingMethods.swift */; settings = {ASSET_TAGS = (); }; };
+		43C72A3E1B98F34900740AFE /* postgres.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C72A3D1B98F34900740AFE /* postgres.png */; settings = {ASSET_TAGS = (); }; };
+		43C72A401B98F35100740AFE /* nasa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43C72A3F1B98F35100740AFE /* nasa.jpg */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43C72A171B98E8E100740AFE /* Image Resizing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Resizing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43C72A1A1B98E8E100740AFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43C72A1C1B98E8E100740AFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43C72A1F1B98E8E100740AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43C72A211B98E8E100740AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43C72A241B98E8E100740AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43C72A261B98E8E100740AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43C72A3A1B98EA5900740AFE /* ImageResizingMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResizingMethods.swift; sourceTree = "<group>"; };
+		43C72A3D1B98F34900740AFE /* postgres.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = postgres.png; sourceTree = "<group>"; };
+		43C72A3F1B98F35100740AFE /* nasa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nasa.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43C72A141B98E8E100740AFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43C72A0E1B98E8E100740AFE = {
+			isa = PBXGroup;
+			children = (
+				43C72A191B98E8E100740AFE /* Image Resizing */,
+				43C72A181B98E8E100740AFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43C72A181B98E8E100740AFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43C72A171B98E8E100740AFE /* Image Resizing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43C72A191B98E8E100740AFE /* Image Resizing */ = {
+			isa = PBXGroup;
+			children = (
+				43C72A3C1B98F33C00740AFE /* images */,
+				43C72A1A1B98E8E100740AFE /* AppDelegate.swift */,
+				43C72A1C1B98E8E100740AFE /* ViewController.swift */,
+				43C72A3A1B98EA5900740AFE /* ImageResizingMethods.swift */,
+				43C72A1E1B98E8E100740AFE /* Main.storyboard */,
+				43C72A211B98E8E100740AFE /* Assets.xcassets */,
+				43C72A231B98E8E100740AFE /* LaunchScreen.storyboard */,
+				43C72A261B98E8E100740AFE /* Info.plist */,
+			);
+			path = "Image Resizing";
+			sourceTree = "<group>";
+		};
+		43C72A3C1B98F33C00740AFE /* images */ = {
+			isa = PBXGroup;
+			children = (
+				43C72A3D1B98F34900740AFE /* postgres.png */,
+				43C72A3F1B98F35100740AFE /* nasa.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43C72A161B98E8E100740AFE /* Image Resizing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43C72A341B98E8E100740AFE /* Build configuration list for PBXNativeTarget "Image Resizing" */;
+			buildPhases = (
+				43C72A131B98E8E100740AFE /* Sources */,
+				43C72A141B98E8E100740AFE /* Frameworks */,
+				43C72A151B98E8E100740AFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Image Resizing";
+			productName = "Image Resizing";
+			productReference = 43C72A171B98E8E100740AFE /* Image Resizing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43C72A0F1B98E8E100740AFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Nate Cook";
+				TargetAttributes = {
+					43C72A161B98E8E100740AFE = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = FJUZUQGACM;
+					};
+				};
+			};
+			buildConfigurationList = 43C72A121B98E8E100740AFE /* Build configuration list for PBXProject "Image Resizing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43C72A0E1B98E8E100740AFE;
+			productRefGroup = 43C72A181B98E8E100740AFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43C72A161B98E8E100740AFE /* Image Resizing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43C72A151B98E8E100740AFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C72A251B98E8E100740AFE /* LaunchScreen.storyboard in Resources */,
+				43C72A401B98F35100740AFE /* nasa.jpg in Resources */,
+				43C72A221B98E8E100740AFE /* Assets.xcassets in Resources */,
+				43C72A3E1B98F34900740AFE /* postgres.png in Resources */,
+				43C72A201B98E8E100740AFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43C72A131B98E8E100740AFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C72A1D1B98E8E100740AFE /* ViewController.swift in Sources */,
+				43C72A3B1B98EA5900740AFE /* ImageResizingMethods.swift in Sources */,
+				43C72A1B1B98E8E100740AFE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		43C72A1E1B98E8E100740AFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43C72A1F1B98E8E100740AFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43C72A231B98E8E100740AFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43C72A241B98E8E100740AFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43C72A321B98E8E100740AFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43C72A331B98E8E100740AFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43C72A351B98E8E100740AFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Image Resizing/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.natecook.Image-Resizing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Debug;
+		};
+		43C72A361B98E8E100740AFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Image Resizing/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.natecook.Image-Resizing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43C72A121B98E8E100740AFE /* Build configuration list for PBXProject "Image Resizing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43C72A321B98E8E100740AFE /* Debug */,
+				43C72A331B98E8E100740AFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43C72A341B98E8E100740AFE /* Build configuration list for PBXNativeTarget "Image Resizing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43C72A351B98E8E100740AFE /* Debug */,
+				43C72A361B98E8E100740AFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43C72A0F1B98E8E100740AFE /* Project object */;
+}
