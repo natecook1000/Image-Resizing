@@ -14,12 +14,12 @@ enum TestImage {
     case NASA
     
     /// The URL for the image.
-    var url: NSURL {
+    var url: URL {
         switch self {
         case .Postgres:
-            return NSBundle.mainBundle().URLForResource("postgres", withExtension: "png")!
+            return Bundle.main.url(forResource: "postgres", withExtension: "png")!
         case .NASA:
-            return NSBundle.mainBundle().URLForResource("nasa", withExtension: "jpg")!
+            return Bundle.main.url(forResource: "nasa", withExtension: "jpg")!
         }
     }
 }
@@ -33,7 +33,7 @@ enum ResizingTest: String {
     case CoreImageSoftware = "Core Image Software"
     case VImage = "Accelerate VImage"
     
-    typealias ResizingFunction = (NSURL, Double) -> UIImage?
+    typealias ResizingFunction = (URL, Double) -> UIImage?
     
     /// The function to call for the test.
     var function: ResizingFunction {
@@ -57,8 +57,8 @@ enum ResizingTest: String {
 /// Calculate the standard deviation of the observations in `data`.
 func standardDeviation(data: [Double]) -> Double {
     let doubleCount = Double(data.count)
-    let mean = data.reduce(0, combine: +) / doubleCount
-    let variance = data.map({ pow($0 - mean, 2) }).reduce(0, combine: +) / doubleCount
+    let mean = data.reduce(0, +) / doubleCount
+    let variance = data.map({ pow($0 - mean, 2) }).reduce(0, +) / doubleCount
     return sqrt(variance)
 }
 
@@ -93,14 +93,16 @@ class ViewController: UIViewController {
             // appear to render unless displayed, even when rendering calls are made.)
             let start = CACurrentMediaTime()
             resizedImage = test.function(image.url, resizingFactor)
-            dispatch_sync(dispatch_get_main_queue()) {
+            
+            DispatchQueue.main.sync {
                 self.renderingImageView.image = resizedImage
             }
+            
             results.append(CACurrentMediaTime() - start)
         }
         
         // clear the rendered image - a visual cue that this round is over
-        dispatch_sync(dispatch_get_main_queue()) {
+        DispatchQueue.main.sync {
             self.renderingImageView.image = nil
         }
         
@@ -110,17 +112,17 @@ class ViewController: UIViewController {
         
         // check to make sure the test actually worked properly
         if resizedImage != nil {
-            output += results.map({ String(format: floatFormat, $0) }).joinWithSeparator(" ") + "\n"
+            output += results.map({ String(format: floatFormat, $0) }).joined(separator: " ") + "\n"
             
-            let mean = results.reduce(0, combine: +) / Double(results.count)
-            let stdev = standardDeviation(results)
+            let mean = results.reduce(0, +) / Double(results.count)
+            let stdev = standardDeviation(data: results)
             output +=   "total time: \(String(format: floatFormat, CACurrentMediaTime() - startAll))\n" +
                         "average: \(String(format: floatFormat, mean)), s.d.: \(String(format: floatFormat, stdev))\n\n"
         } else {
             output += "TEST FAILED\n\n"
         }
         
-        dispatch_async(dispatch_get_main_queue()) {
+        DispatchQueue.main.async {
             self.outputText.text = output + self.outputText.text
         }
     }
@@ -130,31 +132,32 @@ class ViewController: UIViewController {
         let tests: [ResizingTest] = [.UIKit, .CoreGraphics, .ImageIO, .VImage, .CoreImageGPU, .CoreImageSoftware]
         
         // build a serial queue for the tests
-        let queue = NSOperationQueue()
+        let queue = OperationQueue()
         queue.maxConcurrentOperationCount = 1
-        queue.qualityOfService = .UserInitiated     // seems appropriate
-        queue.suspended = true
+        queue.qualityOfService = .userInitiated     // seems appropriate
+        queue.isSuspended = true
         
         for image in images {
             for test in tests {
-                queue.addOperationWithBlock {
-                    self.performResizingTest(image, test: test)
-                }
+                queue.addOperation({
+                    self.performResizingTest(image: image, test: test)
+                })
             }
         }
         
         // turn the start button back on when finished with tests
-        queue.addOperationWithBlock {
-            NSOperationQueue.mainQueue().addOperationWithBlock {
-                self.startButton.enabled = true
-            }
+        queue.addOperation {
+            OperationQueue.main.addOperation({
+                self.startButton.isEnabled = true
+            })
         }
-        queue.suspended = false
+       
+        queue.isSuspended = false
     }
     
     @IBAction func beginTest(_: AnyObject) {
         // prepare
-        startButton.enabled = false
+        startButton.isEnabled = false
         outputText.text = ""
         
         // create the Core Image contexts before the tests start

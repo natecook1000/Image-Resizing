@@ -12,9 +12,9 @@
 		43C72A201B98E8E100740AFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C72A1E1B98E8E100740AFE /* Main.storyboard */; };
 		43C72A221B98E8E100740AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43C72A211B98E8E100740AFE /* Assets.xcassets */; };
 		43C72A251B98E8E100740AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C72A231B98E8E100740AFE /* LaunchScreen.storyboard */; };
-		43C72A3B1B98EA5900740AFE /* ImageResizingMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C72A3A1B98EA5900740AFE /* ImageResizingMethods.swift */; settings = {ASSET_TAGS = (); }; };
-		43C72A3E1B98F34900740AFE /* postgres.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C72A3D1B98F34900740AFE /* postgres.png */; settings = {ASSET_TAGS = (); }; };
-		43C72A401B98F35100740AFE /* nasa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43C72A3F1B98F35100740AFE /* nasa.jpg */; settings = {ASSET_TAGS = (); }; };
+		43C72A3B1B98EA5900740AFE /* ImageResizingMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C72A3A1B98EA5900740AFE /* ImageResizingMethods.swift */; };
+		43C72A3E1B98F34900740AFE /* postgres.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C72A3D1B98F34900740AFE /* postgres.png */; };
+		43C72A401B98F35100740AFE /* nasa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43C72A3F1B98F35100740AFE /* nasa.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,7 +112,7 @@
 				TargetAttributes = {
 					43C72A161B98E8E100740AFE = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = FJUZUQGACM;
+						DevelopmentTeam = 8FP79AP6S9;
 					};
 				};
 			};
@@ -269,12 +269,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8FP79AP6S9;
 				INFOPLIST_FILE = "Image Resizing/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.natecook.Image-Resizing";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lavare.Image-Resizing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -282,11 +284,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8FP79AP6S9;
 				INFOPLIST_FILE = "Image Resizing/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.natecook.Image-Resizing";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lavare.Image-Resizing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
