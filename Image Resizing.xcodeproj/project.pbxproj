@@ -112,7 +112,6 @@
 				TargetAttributes = {
 					43C72A161B98E8E100740AFE = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 8FP79AP6S9;
 					};
 				};
 			};
@@ -269,11 +268,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8FP79AP6S9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Image Resizing/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lavare.Image-Resizing";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.natecook.Image-Resizing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
@@ -284,11 +283,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8FP79AP6S9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Image Resizing/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lavare.Image-Resizing";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.natecook.Image-Resizing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
